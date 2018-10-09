@@ -50,6 +50,10 @@ hr{
     margin-bottom: 50px;
 }
 
+section:not(.tourist):nth-child(even){
+    background-color: #f5f5ff;
+}
+
 section{
     display: flex;
     flex-direction: column;
@@ -105,7 +109,7 @@ header li{
     margin: 0 15px;
 }
 
-/* tourist Class */
+/* tourist section */
 
 .tourist{
     position: relative;
@@ -153,7 +157,7 @@ header li{
     }
 }
 
-/* gena class */
+/* gena section */
 
 .gena .grid li{
     height: 350px;
@@ -169,4 +173,21 @@ header li{
 
 .gena .grid li.large{
     flex-basis: 70%;
+}
+
+/* Coding-Profile section */
+
+.Coding-Profile .grid li{
+    padding: 50px;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.Coding-Profile .grid li i{
+    color: #8c9eff;
+}
+
+.Coding-Profile .grid li h4{
+    font-size: 30px;
+    margin: 25px 0;
 }
