@@ -11,7 +11,7 @@ html{
     color: #555555;
 }
 
-nav{
+ul,nav{
     list-style: none;
 }
 
@@ -35,11 +35,41 @@ a.btn{
     opacity: 1;
 }
 
+.grid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+hr{
+    width: 250px;
+    height: 3px;
+    background-color: #3f51bf;
+    border: 0;
+    margin-bottom: 50px;
+}
+
 section{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px;   
+}
+
+section h3 .title{
+    text-transform: capitalize;
+    font: bold 20px "Open-sans", sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+section p{
+    max-width: 775px;
+    line-height: 2;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 /* Header Styles */
@@ -85,7 +115,7 @@ header li{
     color: black;
 }
 
-.gennady{
+.tourist .gennady{
     position: absolute;
     top: 0;
     left: 0;
@@ -123,7 +153,20 @@ header li{
     }
 }
 
+/* gena class */
 
+.gena .grid li{
+    height: 350px;
+    padding: 20px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
 
+.gena .grid li.small{
+    flex-basis: 30%;
+}
 
-
+.gena .grid li.large{
+    flex-basis: 70%;
+}
