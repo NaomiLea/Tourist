@@ -25,6 +25,16 @@ a:hover{
     opacity: 1;
 }
 
+a.btn{
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    background-color: #3151b5;
+    color: #fff;
+    opacity: 1;
+}
+
 .grid{
     width: 100%;
     display: flex;
